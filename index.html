@@ -10,11 +10,10 @@
         <h1>Processing project by Sergio</h1>
         <script type="text/processing">
 
-          void setup(){	
+	void setup(){	
 	size(360,470);
-	background (21);
+	background (100);
 	}
-	
 	void draw(){
 	
 	
@@ -25,20 +24,20 @@
 	fill (100, 200, 0);
 	popMatrix();
 	translate(100,150,-300);
-	rotate(radians(40));
+	rotate(radians(30));
 	box(40);
 	fill (255,0,0);
 	
 	pushMatrix();
-	translate(20,100);
+	translate(100,100);
 	rotate (radians(frameCount * 2 %360));
 	rect(100,30,60,-100);
 	fill (100, 110, 100);
-	fill (frameCount*20 %100);
+	fill (frameCount*20 %500);
 	popMatrix();
-	translate(110,150,-100);
-	rotate(radians(80));
-	box(80);
+	translate(110,150,-200);
+	rotate(radians(10));
+	box(60);
 	fill (200,100,230);
 	
 	
