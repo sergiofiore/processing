@@ -10,21 +10,39 @@
         <h1>Processing project by Antonio</h1>
         <script type="text/processing">
 
-            // Write your project here
-            
-            // Example
-            void setup() {
-              size(200, 200);
-              background(255);
-            }
-            void draw(){
-                pushMatrix();
-                translate(100, 100);
-                rotate(radians(frameCount * 2  % 360));
-                rect(0, 0, 80, 5);
-                popMatrix();
-            }
-            
+          void setup(){	
+	size(360,470);
+	background (100);
+	}
+	void draw(){
+	
+	
+	pushMatrix();
+	translate(100,130);
+	rotate (radians(frameCount * 3 %360));
+	rect(20,5,27,-100);
+	fill (100, 200, 0);
+	popMatrix();
+	translate(100,150,-300);
+	rotate(radians(30));
+	box(40);
+	fill (255,0,0);
+	
+	pushMatrix();
+	translate(100,100);
+	rotate (radians(frameCount * 2 %360));
+	rect(100,30,60,-100);
+	fill (100, 110, 100);
+	fill (frameCount*20 %500);
+	popMatrix();
+	translate(110,150,-200);
+	rotate(radians(10));
+	box(60);
+	fill (200,100,230);
+	
+	
+	}
+          
         </script>
         <canvas></canvas>
     </body>
